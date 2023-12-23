@@ -1,4 +1,13 @@
 package com.example.celeryhydroponic;
+
+import android.os.Bundle;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;  // Import AppCompatActivity
+
+@SuppressWarnings("unused")  // Suppress the warning about the class not being used
 public class SensorData {
 
     private String date;
@@ -23,4 +32,3 @@ public class SensorData {
         return humidity;
     }
 }
-

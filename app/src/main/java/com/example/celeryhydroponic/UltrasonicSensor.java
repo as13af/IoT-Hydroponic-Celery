@@ -1,4 +1,6 @@
-public class UltrasonicSensor {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class UltrasonicSensor extends AppCompatActivity {
     public interface OnDistanceChangeListener {
         void onDistanceChanged(float distance);
     }

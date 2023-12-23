@@ -1,4 +1,13 @@
 package com.example.celeryhydroponic;
+
+import android.os.Bundle;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;  // Import AppCompatActivity
+
+
 // Your package and import statements here
 
 public class TemperatureActivity extends AppCompatActivity {
