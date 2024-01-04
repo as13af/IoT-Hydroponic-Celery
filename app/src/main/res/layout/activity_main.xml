@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".YourActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/temperatureTextView"
@@ -39,14 +39,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
         <!-- Add the following TextView for displaying celery growth -->
-<TextView
-    android:id="@+id/growthTextView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Celery Growth: "
-    android:layout_below="@id/humidityTextView"
-    android:layout_marginTop="20dp"
-    android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/growthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celery Growth: "
+        android:layout_below="@id/humidityTextView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/phTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PH Value" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

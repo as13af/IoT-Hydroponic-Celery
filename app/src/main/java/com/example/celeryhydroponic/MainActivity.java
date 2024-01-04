@@ -4,10 +4,14 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import cc.blynk.Blynk;
 import cc.blynk.BlynkState;
 import cc.blynk.IBlynk;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Set your Blynk authentication token
-        String authToken = "your_auth_token";
+        String authToken = "8fKt2aHz2eKItnpsAXnS5JVVDAlUNR7V";
         blynk.begin(authToken);
 
         // Initialize Ultrasonic Sensor

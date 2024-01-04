@@ -1,9 +1,11 @@
 package com.example.celeryhydroponic;
+
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;  // Correct import for AppCompatActivity
 
 public class HistoryActivity extends AppCompatActivity {
 
@@ -43,4 +45,3 @@ public class HistoryActivity extends AppCompatActivity {
         historyTable.addView(row);
     }
 }
-

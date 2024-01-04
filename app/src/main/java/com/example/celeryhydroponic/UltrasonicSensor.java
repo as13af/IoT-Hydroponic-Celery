@@ -1,17 +1,31 @@
+package com.example.celeryhydroponic;
+
+import android.os.Bundle;
+import android.widget.TextView;
+import androidx.annotation.Nullable;  // Add this import
 import androidx.appcompat.app.AppCompatActivity;
 
 public class UltrasonicSensor extends AppCompatActivity {
+
+    private TextView distanceTextView;
+    private OnDistanceChangeListener listener;
+
     public interface OnDistanceChangeListener {
         void onDistanceChanged(float distance);
     }
 
-    private OnDistanceChangeListener listener;
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ultrasonic_sensor);
 
-    public UltrasonicSensor(OnDistanceChangeListener listener) {
-        this.listener = listener;
+        distanceTextView = findViewById(R.id.distanceTextView);
+
         // Initialize your Ultrasonic Sensor here (use appropriate library or code).
         // You might need to set up GPIO pins, provide power, etc.
         // Register a listener or use a loop to periodically measure the distance.
+
+        // Additional initialization code for your UltrasonicSensor activity
     }
 
     // Example method to simulate distance change (replace this with actual sensor reading)

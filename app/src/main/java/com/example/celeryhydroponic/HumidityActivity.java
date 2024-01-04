@@ -1,5 +1,11 @@
 package com.example.celeryhydroponic;
-// Your package and import statements here
+
+import android.os.Bundle;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class HumidityActivity extends AppCompatActivity {
 
