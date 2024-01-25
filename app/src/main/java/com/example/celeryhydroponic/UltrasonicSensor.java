@@ -2,7 +2,6 @@ package com.example.celeryhydroponic;
 
 import android.os.Bundle;
 import android.widget.TextView;
-import androidx.annotation.Nullable;  // Add this import
 import androidx.appcompat.app.AppCompatActivity;
 
 public class UltrasonicSensor extends AppCompatActivity {
@@ -15,7 +14,7 @@ public class UltrasonicSensor extends AppCompatActivity {
     }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ultrasonic_sensor);
 
